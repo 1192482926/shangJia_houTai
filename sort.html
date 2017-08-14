@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>项目类别 - 芊浔体检管理系统</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" sizes="16x16" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0.1" />
+	<link rel="stylesheet" type="text/css" href="style/sort.css?v=1.0.1" />
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/global.js?v=1.0.1"></script>
+	<script type="text/javascript" src="script/sort.js?v=1.0.1"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="script/html5.js"></script>
+	<! [endif]-->
+</head>
+<body>
+<header class="header">
+	<div class="wrap">
+		<div class="top-nav">
+			您好，<em>成都八一骨科医院体检中心</em>
+			<a href="javascript:topset();"><i class="icon-set"></i>设置</a>
+			<a href="javascript:;"><i class="icon-logout"></i>退出</a>
+		</div>
+		<div class="logo"><a href="index.html" title="芊浔体检管理系统"><i class="icon-logo"></i>芊浔体检管理系统</a></div>
+		<div class="clear"></div>
+	</div>
+</header>
+<section class="main">
+	<div class="wrap">
+		<div class="main-right">
+			<div class="search">
+				<a href="javascript:history.go(-1);" class="back">返回</a>
+				<div class="input-box">
+					详细类目：<input type="text" value="" class="input" />
+				</div>
+				<div class="condition condition-type">
+					<div class="condition-name">项目类别：</div>
+					<div class="drop-down condition-box">
+						<div class="select">全部</div>
+						<div class="select-list">
+							<ul>
+								<li>全部</li>
+								<li>科室检查</li>
+								<li>实验室检查</li>
+								<li>医技检查</li>
+							</ul>
+						</div>
+						<div class="icon-dropdown"></div>
+					</div>
+				</div>
+				<a href="javascript:;">查找</a>
+			</div>
+			<div class="btns">
+				<a href="add-sort.html" class="add-examination-item"><i class="icon-add"></i>添加详细类目</a>
+				<a href="javascript:;" class="edit"><i class="icon-edit"></i>批量修改</a>
+				<a href="javascript:;" class="delete"><i class="icon-delete"></i>批量删除</a>
+			</div>
+			<div class="order-list">
+				<div class="thead">
+					<div class="check"><input type="checkbox" id="allcheck" class="checkbox" /><label for="allcheck">全选</label></div>
+					<div class="type">项目类别</div>
+					<div class="package-name">详细类目</div>
+					<div class="operating">操作</div>
+				</div>
+				<div class="tbody">
+					<!--没有任何体检套餐，显示 no-package-->
+					<div class="no-package">详细类目<a href="add-sort.html">添加</a></div>
+					<div class="tr">
+						<div class="check">
+							<input type="checkbox" class="checkbox" />					
+						</div>
+						<div class="type">科室检查</div>
+						<div class="package-name">一般检查</div>
+						<div class="operating"><a href="add-sort.html" class="edit">修改</a><a href="javascript:;" class="del">删除</a></div>
+					</div>
+					<div class="tr">
+						<div class="check">
+							<input type="checkbox" class="checkbox" />					
+						</div>
+						<div class="type">实验室检查</div>
+						<div class="package-name">血液检测</div>
+						<div class="operating"><a href="add-sort.html" class="edit">修改</a><a href="javascript:;" class="del">删除</a></div>
+					</div>
+					<div class="tr">
+						<div class="check">
+							<input type="checkbox" class="checkbox" />					
+						</div>
+						<div class="type">医技检查</div>
+						<div class="package-name">身高检查</div>
+						<div class="operating"><a href="add-sort.html" class="edit">修改</a><a href="javascript:;" class="del">删除</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="page">
+				<a href="javascript:;" class="prev no-prev" title="上一页">上一页</a><a href="javascript:;" class="now">1</a><a href="javascript:;">2</a><a href="javascript:;">3</a><a href="javascript:;">4</a><a href="javascript:;">5</a><a href="javascript:;">6</a><a href="javascript:;" class="next" title="下一页">下一页</a>
+			</div>
+		</div>
+		<div class="main-left">
+			<a href="index.html">首页</a>
+			<a href="order.html">订单列表</a>
+			<a href="reservation.html">体检列表</a>
+			<a href="package.html">套餐管理</a>
+			<a href="examination-item.html" class="on">体检项目</a>
+			<a href="report.html">体检报告</a>
+			<a href="statistics.html">数据统计</a>
+			<a href="hospital.html">机构信息</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</section>
+</body>
+</html>

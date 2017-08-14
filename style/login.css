@@ -1,0 +1,218 @@
+/*Reset*/
+@made by kami;
+@charset "utf-8";
+*{
+	padding:0;
+	margin:0;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, em {
+	padding: 0;
+	margin: 0;
+	outline: none
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+fieldset,img {
+	border: 0;
+	font-size:12px;
+}
+address, caption, cite, code, dfn, em, th, var, i {
+	font-weight: normal;
+	font-style: normal
+}
+ol, ul, li {
+	list-style: none
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%
+}
+.clear {
+	clear: both;
+}
+input, img {
+	border: none;
+}
+/*禁止苹果系统所有默认样式*/
+html,body{-webkit-text-size-adjust:none;}/*去除苹果设备下浏览器默认按钮样式与背景*/
+*:focus {outline: none}/*禁止所有聚焦边框*/
+input[type=text],input[type=email],input[type=search],input[type=button],textarea {-webkit-appearance:none;outline: none;}/* 屏蔽文本框高亮 */
+/*禁止苹果系统所有默认样式*/
+body {
+	font: 14px/20px "Microsoft Yahei","宋体", Tahoma, 'Simsun';
+	color: #333333;
+	background: #ffffff;
+	text-align: center;
+}
+a, a:visited {
+	text-decoration: none;
+	color: #000000;
+	blr:expression(this.onFocus=this.blur());
+	outline: none;
+	transition:all 0.25s ease 0.1s;
+}
+a:hover {
+	text-decoration: none;
+	color: #333333;
+}
+input {
+	font-size: 14px;
+	font-family: "Microsoft Yahei";
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+.wrap{
+	margin:0 auto;
+	width:1200px;
+}
+.header{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+}
+.header .tel{
+	float: right;
+}
+.header .logo{
+	float: left;
+	font-size: 28px;
+}
+.header .logo i.icon-logo{
+	width: 23px;
+	height: 32px;
+	overflow: hidden;
+	float: left;
+	background: url(../images/icon.png) no-repeat 0 0;
+	margin-top: 24px;
+}
+.main{
+	width: 100%;
+	min-width: 1200px;
+	height: 500px;
+	position: relative;
+	background: url(../images/bg.jpg) no-repeat center top #02ced7;
+}
+.main .userbox{
+	position: relative;
+	width: 330px;
+	float: right;
+	box-shadow: 0 0 5px #cccccc;
+	margin: 75px 145px 0 0;
+}
+.main .userbox .userbox-bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ffffff;
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+.main .userbox .boxmain{
+	position: relative;
+	padding: 25px;
+	float: left;
+}
+.main .userbox .boxmain .box-name,.main .userbox .boxmain .item{
+	width: 280px;
+	float: left;
+}
+.main .userbox .boxmain .box-name{
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.main .userbox .boxmain .input-box{
+	width: 100%;
+	position: relative;
+	text-align: left;
+	float: left;
+}
+.main .userbox .boxmain .input{
+	border: none;
+	padding: 10px;
+	width: 260px;
+	border-radius: 5px;
+	box-shadow: #cccccc;
+	height: 20px;
+	float: left;
+}
+.main .userbox .boxmain .short{
+	width: 120px;
+}
+.main .userbox .boxmain .short .input{
+	width: 100px;
+}
+.main .userbox .boxmain input:focus.input{
+	box-shadow: 0 0 5px #a7e5d7;
+}
+.main .userbox .boxmain .input-tips{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	cursor: text;
+	color: #999999;
+}
+.main .userbox .boxmain .error-tips{
+	width: 260px;
+	height: 20px;
+	float: left;
+	line-height: 20px;
+	text-align: right;
+	padding-left: 10px;
+	color: #666666;
+	font-size: 12px;
+}
+.main .userbox .boxmain .getcode{
+	float: left;
+	margin-left: 10px;
+}
+.main .userbox .boxmain .getcode a{
+	float: left;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	background: #06be94;
+	border-radius: 5px;
+}
+.main .userbox .boxmain .getcode a:hover{
+	background: #25d3a4;
+}
+.main .userbox .boxmain .waiting a,.main .userbox .boxmain .waiting a:hover{
+	background: #dedede;
+	cursor: default;
+}
+.main .userbox .boxmain .useragreement a{
+	text-decoration: underline;
+}
+.main .userbox .boxmain .useragreement a:hover{
+	text-decoration: none;
+}
+.main .userbox .boxmain .useragreement input,.main .userbox .boxmain .forget input{
+	vertical-align: bottom;
+	float: left;
+	margin: 4px 5px 0 0;
+}
+.main .userbox .boxmain .forget a{
+	float: right;
+}
+.main .userbox .boxmain .forget a:hover{
+	text-decoration: underline;
+}
+.main .userbox .boxmain .enter-btn{
+	width: 100%;
+	background: #06be94;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 16px;
+}
+.main .userbox .boxmain input:hover.enter-btn{
+	background: #25d3a4;
+}

@@ -1,0 +1,336 @@
+/*Reset*/
+@made by kami;
+@charset "utf-8";
+.input{
+	padding: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #e5e5e5;
+	margin: 0 10px;
+	text-align: left;
+	width: 110px;
+}
+input:focus.input{
+	box-shadow: 0 0 5px #cdcdcd;
+	border-color: #cdcdcd;
+}
+.search{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding: 20px 0;
+}
+.search a{
+	background: #06be94;
+	color: #ffffff;
+	border: 1px solid #06be94;
+	padding: 5px 15px; 
+	border-radius: 5px;
+	float: left;
+	margin-left: 30px;
+}
+.search a:hover{
+	background: #16ad8a;
+}
+.search a.back{
+	background: #ffffff;
+	color: #333333;
+	float: left;
+	margin-right: 100px;
+	margin-left: 0;
+}
+.search a:hover.back{
+	background: #06be94;
+	color: #ffffff;
+}
+.search .input-box{
+	float: left;
+	margin-left: 20px;
+}
+.condition{
+	float: left;
+	text-align: center;
+}
+.condition .condition-name{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: right;
+}
+.condition .calendar{
+	width: 134px;
+	height: 28px;
+	float: left;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	margin-left: 5px;
+	position: relative;
+}
+.condition .calendar .date{
+	line-height: 30px;
+	text-align: left;
+	text-indent: 10px;
+}
+.condition .calendar .icon-calendar{
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+	background: url(../images/icon.png) no-repeat 0 -145px;
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+	right: 10px;
+}
+.condition .drop-down{
+	position: relative;
+	margin-left: 5px;
+	width: 95px;
+	height: 28px;
+	float: left;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+.condition .drop-down .select{
+	width: 100%;
+	line-height: 28px;
+	cursor: pointer;
+}
+.condition .drop-down .select-list{
+	position: absolute;
+	left: -1px;
+	top: 28px;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	background: #ffffff;
+	line-height: 28px;
+	z-index: 1;
+	display: none;
+	width: 100%;
+}
+.condition .show .select-list{
+	display: block;
+}
+.condition .drop-down .select-list li{
+	border-top: 1px solid #e5e5e5;
+	cursor: pointer;
+}
+.condition .drop-down .select-list li:hover{
+	background: #f8f8f8;
+}
+.condition .drop-down .icon-dropdown{
+	width: 9px;
+	height: 6px;
+	overflow: hidden;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	background: url(../images/icon.png) no-repeat -178px -66px;
+}
+.condition .show .icon-dropdown{
+	background-position: -178px -55px;
+}
+.order-list{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.no-order{
+	width: 1018px;
+	_width:1020px;
+	float: left;
+	height: auto;
+	padding: 50px 0;
+	font-size: 18px;
+	border: 1px solid #e5e5e5;
+}
+.order-list .thead{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #06be94;
+	color: #ffffff;
+	line-height: 40px;
+}
+.order-list .tbody,.order-list .tbody .tr{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.order-list .tbody .tr{
+	border: 1px solid #e5e5e5;
+	line-height: 50px;
+	border-top: none;
+	width: 1018px;
+	_width:1020px;
+}
+.order-list .tbody .tr:hover{
+	background: #f8f8f8;
+}
+.order-list .time{
+	width: 130px;
+	float: left;
+}
+.order-list .name{
+	width: 160px;
+	float: left;
+}
+.order-list .sex{
+	width: 80px;
+	float: left;
+}
+.order-list .tel{
+	width: 160px;
+	float: left;
+}
+.order-list .operating{
+	width: 130px;
+	float: left;
+}
+.order-list .operating a{
+	padding: 4px 15px;
+	margin: 0 5px;
+	border-radius: 3px;
+}
+.order-list .operating a.upload{
+	border: 1px solid #06be94;
+	color: #06be94;
+}
+.order-list .operating a:hover.upload{
+	background: #06be94;
+	color: #ffffff;
+}
+.order-list .operating a.view{
+	background: #06be94;
+	border: 1px solid #06be94;
+	color: #ffffff;
+}
+.order-list .operating a:hover.view{
+	background: #16ad8a;
+}
+.order-list .package-name{
+	width: 320px;
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.order-list .package-name a:hover{
+	text-decoration: underline;
+}
+.pop-up .popupline{
+	width: 100%;
+	height: auto;
+	float: left;
+	line-height: 30px;
+}
+.pop-up .popupline .text{
+	width: 140px;
+	height: 30px;
+	float: left;
+	text-align: right;
+}
+.pop-up .popupline .fileurl{
+	width: 170px;
+	height: 28px;
+	float: left;
+	border: 1px solid #e1e1e1;
+	background: #f8f8f8;
+	padding: 0 10px;
+	line-height: 28px;
+	margin: 0 15px 0 10px;
+}
+.pop-up .popupline a{
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	color: #06be94;
+	border: 1px solid #06be94;
+	padding: 0 15px;
+	border-radius: 3px;
+}
+.pop-up .popupline a:hover{
+	background: #06be94;
+	color: #ffffff;
+}
+.pop-up .popupline em{
+	color: #999999;
+	font-size: 12px;
+}
+.view-report{
+	width: 1020px;
+	height: auto;
+	position: absolute;
+	z-index: 991;
+	left: 50%;
+	margin-left: -420px;
+	top: 0;
+	display: none;
+	padding: 150px 0
+}
+.view-close{
+	width: 100%;
+	height: 40px;
+	float: left;
+	background: #06be94;
+	line-height: 40px;
+	color: #ffffff;
+	font-size: 16px;
+}
+.view-close a,.view-report .bottom a{
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	float: right;
+	cursor: pointer;
+	background: url(../images/icon.png) no-repeat -163px -145px;
+	text-align: left;
+	text-indent: -999px;
+	margin: 10px;
+}
+.view-close em{
+	margin-right: 10px;
+}
+.view-report .report-list{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #ffffff;
+	padding: 30px 0;
+}
+.view-report .report-list .report-box{
+	display: none;
+	padding: 0 30px;
+}
+.view-report .report-page{
+	width: 100%;
+	height: auto;
+	padding: 30px 0;
+	float: left;
+	background: #ffffff;
+	border-top: 1px solid #06be94;
+}
+.view-report .report-page .next{
+	float: right;
+	margin-right: 100px;
+}
+.view-report .report-page .prev{
+	float: left;
+	margin-left: 100px;
+}
+.view-report .report-page a:hover{
+	color: #06be94;
+}
+.view-report .report-page .pagenumber a{
+	margin: 0 20px;
+}
+.view-report .bottom{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.view-report .bottom a{
+	margin-right: 500px;
+	margin-top: 20px;
+}

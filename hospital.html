@@ -1,0 +1,171 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>机构信息 - 芊浔体检管理系统</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" sizes="16x16" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0.1" />
+	<link rel="stylesheet" type="text/css" href="style/hospital.css?v=1.0.1" />
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/global.js?v=1.0.1"></script>
+	<script type="text/javascript" src="script/hospital.js?v=1.0.1"></script>
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="script/html5.js"></script>
+	<! [endif]-->
+</head>
+<body>
+<header class="header">
+	<div class="wrap">
+		<div class="top-nav">
+			您好，<em>成都八一骨科医院体检中心</em>
+			<a href="javascript:topset();"><i class="icon-set"></i>设置</a>
+			<a href="javascript:;"><i class="icon-logout"></i>退出</a>
+		</div>
+		<div class="logo"><a href="index.html" title="芊浔体检管理系统"><i class="icon-logo"></i>芊浔体检管理系统</a></div>
+		<div class="clear"></div>
+	</div>
+</header>
+<section class="main">
+	<div class="wrap">
+		<div class="main-right">
+			<div class="page-name">机构信息</div>
+			<div class="add-examination-item">
+				<div class="edit-item">
+					<div class="line">
+						<div class="distance"></div>
+						<div class="input-box">
+							机构名称：<input type="text" value="" class="input" />
+						</div>
+					</div>
+					<div class="line">
+						<div class="line-name">机构性质：</div>
+						<div class="nature">
+							<label for="radio1"><input type="radio" name="nature" id="radio1" />公立医院</label>
+							<label for="radio2"><input type="radio" name="nature" id="radio2" />公立三甲</label>
+							<label for="radio3"><input type="radio" name="nature" id="radio3" />民营机构</label>
+							<label for="radio4"><input type="radio" name="nature" id="radio4" />专业体检中心</label>
+						</div>
+					</div>
+					<div class="line">
+						<div class="distance"></div>
+						<div class="input-box">
+							机构地址：<input type="text" value="" class="input" />
+						</div>
+					</div>
+					<div class="line">
+						<div class="distance"></div>
+						<div class="condition">
+							<div class="condition-name">体检时间：</div>
+							<div class="drop-down condition-box">
+								<div class="select"></div>
+								<div class="select-list">
+									<ul>
+										<li>法定节假日除外</li>
+										<li>周一至周五</li>
+										<li>周一至周日</li>
+									</ul>
+								</div>
+								<div class="icon-dropdown"></div>
+							</div>
+						</div>
+						<div class="condition time">
+							<div class="drop-down condition-box">
+								<div class="select"></div>
+								<div class="select-list">
+									<ul>
+										<li>08:00</li>
+										<li>08:30</li>
+										<li>09:00</li>
+										<li>09:30</li>
+										<li>10:00</li>
+									</ul>
+								</div>
+								<div class="icon-dropdown"></div>
+							</div>
+							<div class="time-to">-</div>
+							<div class="drop-down condition-box">
+								<div class="select"></div>
+								<div class="select-list">
+									<ul>
+										<li>16:00</li>
+										<li>16:30</li>
+										<li>17:00</li>
+										<li>17:30</li>
+										<li>18:00</li>
+									</ul>
+								</div>
+								<div class="icon-dropdown"></div>
+							</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="line-name">机构简介：</div>
+						<div class="edit-box">
+							<img src="images/edit-box.jpg" alt="编辑框" />
+						</div>
+					</div>
+					<div class="line">
+						<div class="line-name">机构照片：</div>
+						<div class="photo">
+							<div class="img-list">
+								<div class="img-box">
+									<img src="images/hospital.jpg" alt="" title="" />
+									<div class="del">
+										<div class="del-bg"></div>
+										<a href="javascript:;" title="删除图片">删除图片</a>
+									</div>
+								</div>
+								<div class="img-box">
+									<img src="images/hospital.jpg" alt="" title="" />
+									<div class="del">
+										<div class="del-bg"></div>
+										<a href="javascript:;" title="删除图片">删除图片</a>
+									</div>
+								</div>
+								<div class="img-box">
+									<img src="images/hospital.jpg" alt="" title="" />
+									<div class="del">
+										<div class="del-bg"></div>
+										<a href="javascript:;" title="删除图片">删除图片</a>
+									</div>
+								</div>
+								<div class="img-box">
+									<img src="images/hospital.jpg" alt="" title="" />
+									<div class="del">
+										<div class="del-bg"></div>
+										<a href="javascript:;" title="删除图片">删除图片</a>
+									</div>
+								</div>
+							</div>
+							<div class="add-photo">
+								<li><a href="javascript:;">添加图片</a></li>
+								<li>上传图片大小每张不超过200kb,尺寸420x240</li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="line btns">
+					<a href="javascript:;" class="save">保存</a>
+				</div>
+			</div>
+		</div>
+		<div class="main-left">
+			<a href="index.html">首页</a>
+			<a href="order.html">订单列表</a>
+			<a href="reservation.html">体检列表</a>
+			<a href="package.html">套餐管理</a>
+			<a href="examination-item.html">体检项目</a>
+			<a href="report.html">体检报告</a>
+			<a href="statistics.html">数据统计</a>
+			<a href="hospital.html" class="on">机构信息</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</section>
+</body>
+</html>

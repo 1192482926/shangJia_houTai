@@ -1,0 +1,70 @@
+/*Reset*/
+@made by kami;
+@charset "utf-8";
+.main-right .btns{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: right;
+	padding: 20px 0;
+}
+.main-right .btns a{
+	text-align: center;
+	color: #06be94;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	margin: 0 10px;
+	padding: 3px 15px;
+}
+.main-right .btns a:hover{
+	border-color: #06be94;
+}
+.main-right .btns a.on{
+	background: #06be94;
+	border-color: #06be94;
+	color: #fff;
+}
+.box-name{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 20px 0;
+}
+.box-name .people{
+	float: left;
+	color: #06be94;
+}
+.box-name .money{
+	float: left;
+	color: #f48964;
+}
+.box-name .now-data{
+	float: left;
+	width: 200px;
+	margin-left: 310px;
+}
+.box-name .now-data .prev,.box-name .now-data .next{
+	width: 15px;
+	height: 15px;
+	float: left;
+	text-align: left;
+	text-indent: -999px;
+	overflow: hidden;
+	cursor: pointer;
+	margin-top: 2px;
+}
+.box-name .now-data .prev{
+	background: url(../images/icon.png) no-repeat -137px -55px;
+}
+.box-name .now-data .next{
+	background: url(../images/icon.png) no-repeat -156px -55px;
+}
+.box-name .now-data .now-text{
+	width: 120px;
+	float: left;
+}
+.main-right .statistics{
+	width: 100%;
+	height: auto;
+	float: left;
+}

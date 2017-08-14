@@ -1,0 +1,265 @@
+/*Reset*/
+@made by kami;
+@charset "utf-8";
+.input{
+	padding: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #e5e5e5;
+	margin: 0 10px;
+	text-align: left;
+	width: 110px;
+}
+input:focus.input{
+	box-shadow: 0 0 5px #cdcdcd;
+	border-color: #cdcdcd;
+}
+.search{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding: 20px 0;
+}
+.search a{
+	background: #06be94;
+	color: #ffffff;
+	border: 1px solid #06be94;
+	padding: 5px 15px; 
+	border-radius: 5px;
+	float: left;
+	margin-left: 30px;
+}
+.search a:hover{
+	background: #16ad8a;
+}
+.search a.back{
+	background: #ffffff;
+	color: #333333;
+	float: left;
+	margin-right: 100px;
+	margin-left: 0;
+}
+.search a:hover.back{
+	background: #06be94;
+	color: #ffffff;
+}
+.search .input-box{
+	float: left;
+	margin-left: 20px;
+}
+.condition{
+	float: left;
+	text-align: center;
+}
+.condition .condition-name{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: right;
+}
+.condition .calendar{
+	width: 134px;
+	height: 28px;
+	float: left;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	margin-left: 5px;
+	position: relative;
+}
+.condition .calendar .date{
+	line-height: 30px;
+	text-align: left;
+	text-indent: 10px;
+}
+.condition .calendar .icon-calendar{
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+	background: url(../images/icon.png) no-repeat 0 -145px;
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+	right: 10px;
+}
+.condition .drop-down{
+	position: relative;
+	margin-left: 5px;
+	width: 95px;
+	height: 28px;
+	float: left;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+.condition-type .drop-down{
+	width: 140px;
+}
+.condition .drop-down .select{
+	width: 100%;
+	line-height: 28px;
+	cursor: pointer;
+}
+.condition .drop-down .select-list{
+	position: absolute;
+	left: -1px;
+	top: 28px;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	background: #ffffff;
+	line-height: 28px;
+	z-index: 1;
+	display: none;
+	width: 100%;
+}
+.condition .show .select-list{
+	display: block;
+}
+.condition .drop-down .select-list li{
+	border-top: 1px solid #e5e5e5;
+	cursor: pointer;
+}
+.condition .drop-down .select-list li:hover{
+	background: #f8f8f8;
+}
+.condition .drop-down .icon-dropdown{
+	width: 9px;
+	height: 6px;
+	overflow: hidden;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	background: url(../images/icon.png) no-repeat -178px -66px;
+}
+.condition .show .icon-dropdown{
+	background-position: -178px -55px;
+}
+a.add-package{
+	padding: 5px 15px;
+	background: #06be94;
+	border: 1px solid #06be94;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 3px;
+	float: left;
+	margin: 0 160px 0 0;
+}
+a:hover.add-package{
+	background: #16ad8a;
+}
+a.add-package i.icon-add{
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat -113px -55px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.order-list{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.no-package{
+	width: 1018px;
+	_width:1020px;
+	float: left;
+	height: auto;
+	padding: 50px 0;
+	font-size: 18px;
+	border: 1px solid #e5e5e5;
+}
+.no-package a{
+	font-size: 14px;
+	color: #06be94;
+	margin-left: 10px;
+}
+.no-package a:hover{
+	text-decoration: underline;
+}
+.order-list .thead{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #06be94;
+	color: #ffffff;
+	line-height: 40px;
+}
+.order-list .tbody,.order-list .tbody .tr{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.order-list .tbody .tr{
+	border: 1px solid #e5e5e5;
+	line-height: 50px;
+	border-top: none;
+	width: 1018px;
+	_width:1020px;
+}
+.order-list .tbody .tr:hover{
+	background: #f8f8f8;
+}
+.order-list .price{
+	width: 110px;
+	float: left;
+}
+.order-list .type{
+	width: 200px;
+	float: left;
+}
+.order-list .operating{
+	width: 220px;
+	float: left;
+}
+.order-list .operating a{
+	padding: 4px 15px;
+	margin: 0 5px;
+	border-radius: 3px;
+}
+.order-list .operating a.off{
+	border: 1px solid #06be94;
+	color: #06be94;
+}
+.order-list .operating a:hover.off{
+	background: #06be94;
+	color: #ffffff;
+}
+.order-list .operating a.on{
+	background: #06be94;
+	border: 1px solid #06be94;
+	color: #ffffff;
+}
+.order-list .operating a:hover.on{
+	background: #16ad8a;
+}
+.order-list .operating a.edit{
+	background: #f4b444;
+	border: 1px solid #f4b444;
+	color: #ffffff;
+}
+.order-list .operating a:hover.edit{
+	background: #e4a434;
+}
+.order-list .operating a.del{
+	background: #f06969;
+	border: 1px solid #f06969;
+	color: #ffffff;
+}
+.order-list .operating a:hover.del{
+	background: #d94747;
+}
+.order-list .package-name{
+	width: 355px;
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.order-list .package-name a:hover{
+	text-decoration: underline;
+}
+.pop-up .pop-up-content p em{
+	color: #06be94;
+}

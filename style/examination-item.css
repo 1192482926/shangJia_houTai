@@ -1,0 +1,340 @@
+/*Reset*/
+@made by kami;
+@charset "utf-8";
+.input{
+	padding: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #e5e5e5;
+	margin: 0 10px;
+	text-align: left;
+	width: 210px;
+}
+input:focus.input{
+	box-shadow: 0 0 5px #cdcdcd;
+	border-color: #cdcdcd;
+}
+.search{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding: 20px 0;
+}
+.search a{
+	background: #06be94;
+	color: #ffffff;
+	border: 1px solid #06be94;
+	padding: 5px 15px; 
+	border-radius: 5px;
+	float: left;
+	margin-left: 30px;
+}
+.search a:hover{
+	background: #16ad8a;
+}
+.search a.back{
+	background: #ffffff;
+	color: #333333;
+	float: left;
+	margin-right: 100px;
+	margin-left: 0;
+}
+.search a:hover.back{
+	background: #06be94;
+	color: #ffffff;
+}
+.search .input-box{
+	float: left;
+}
+a.add-examination-item{
+	padding: 5px 15px;
+	background: #06be94;
+	border: 1px solid #06be94;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 3px;
+	float: left;
+}
+a:hover.add-examination-item{
+	background: #16ad8a;
+}
+a.add-examination-item i.icon-add{
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat -113px -55px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.main-right .btns{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.main-right .btns a{
+	margin-right: 20px;
+	float: left;
+	padding: 5px 15px;
+}
+.main-right .btns a.delete{
+	background: #f06969;
+	border: 1px solid #f06969;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 3px;
+}
+.main-right .btns a:hover.delete{
+	background: #d94747;
+}
+.main-right .btns a.delete i.icon-delete{
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat -86px -55px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.main-right .btns a.template-download{
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	text-align: center;
+	border-radius: 3px;
+	padding: 6px 15px;
+}
+.main-right .btns a:hover.template-download{
+	border-color: #06be94;
+	color: #06be94;
+}
+.main-right .btns a.edit{
+	background: #f4b444;
+	border: 1px solid #f4b444;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 3px;
+}
+.main-right .btns a:hover.edit{
+	background: #e4a434;
+}
+.main-right .btns a.edit i.icon-edit{
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat -59px -55px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.condition{
+	float: left;
+	text-align: center;
+}
+.condition .condition-name{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: right;
+}
+.condition .calendar{
+	width: 134px;
+	height: 28px;
+	float: left;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	margin-left: 5px;
+	position: relative;
+}
+.condition .calendar .date{
+	line-height: 30px;
+	text-align: left;
+	text-indent: 10px;
+}
+.condition .calendar .icon-calendar{
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+	background: url(../images/icon.png) no-repeat 0 -145px;
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+	right: 10px;
+}
+.condition .drop-down{
+	position: relative;
+	margin-left: 5px;
+	width: 200px;
+	height: 28px;
+	float: left;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+.condition .drop-down .select{
+	width: 100%;
+	line-height: 28px;
+	cursor: pointer;
+}
+.condition .drop-down .select-list{
+	position: absolute;
+	left: -1px;
+	top: 28px;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	background: #ffffff;
+	line-height: 28px;
+	z-index: 1;
+	display: none;
+	width: 100%;
+	max-height: 200px;
+	overflow-y: auto;
+}
+.condition .show .select-list{
+	display: block;
+}
+.condition .drop-down .select-list li{
+	border-top: 1px solid #e5e5e5;
+	cursor: pointer;
+}
+.condition .drop-down .select-list li:hover{
+	background: #f8f8f8;
+}
+.condition .drop-down .icon-dropdown{
+	width: 9px;
+	height: 6px;
+	overflow: hidden;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	background: url(../images/icon.png) no-repeat -178px -66px;
+}
+.condition .show .icon-dropdown{
+	background-position: -178px -55px;
+}
+.order-list{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.no-examination-item{
+	width: 1018px;
+	_width:1020px;
+	float: left;
+	height: auto;
+	padding: 50px 0;
+	font-size: 18px;
+	border: 1px solid #e5e5e5;
+}
+.no-examination-item a{
+	font-size: 14px;
+	color: #06be94;
+	margin-left: 10px;
+}
+.no-examination-item a:hover{
+	text-decoration: underline;
+}
+.order-list .thead{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #06be94;
+	color: #ffffff;
+	line-height: 40px;
+}
+.order-list .tbody,.order-list .tbody .tr{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.order-list .tbody .tr{
+	border: 1px solid #e5e5e5;
+	line-height: 50px;
+	border-top: none;
+	width: 1018px;
+	_width:1020px;
+}
+.order-list .tbody .tr:hover{
+	background: #f8f8f8;
+}
+.order-list .check{
+	width: 55px;
+	float: left;
+}
+.order-list .item-type{
+	width: 100px;
+	float: left;
+}
+.order-list .item-sort{
+	width: 100px;
+	float: left;
+}
+.order-list .item-name{
+	width: 100px;
+	float: left;
+	padding: 0 5px;
+}
+.order-list .tr .item-name{
+	line-height: 20px;
+	padding: 15px 5px;
+}
+.order-list .item-info{
+	width: 215px;
+	float: left;
+	padding: 0 5px;
+}
+.order-list .tr .item-info{
+	text-align: left;
+	line-height: 20px;
+	padding: 15px 5px;
+}
+.order-list .item-price{
+	width: 100px;
+	float: left;
+}
+.order-list .item-discount{
+	width: 60px;
+	float: left;
+}
+.order-list .item-grup{
+	width: 70px;
+	float: left;
+}
+.order-list .operating{
+	width: 180px;
+	float: left;
+}
+.checkbox{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background: #ffffff;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.order-list .operating a{
+	padding: 4px 15px;
+	margin: 0 10px;
+	border-radius: 3px;
+}
+.order-list .operating a.edit{
+	background: #f4b444;
+	border: 1px solid #f4b444;
+	color: #ffffff;
+}
+.order-list .operating a:hover.edit{
+	background: #e4a434;
+}
+.order-list .operating a.del{
+	background: #f06969;
+	border: 1px solid #f06969;
+	color: #ffffff;
+}
+.order-list .operating a:hover.del{
+	background: #d94747;
+}
+.pop-up .pop-up-content p em{
+	color: #06be94;
+}

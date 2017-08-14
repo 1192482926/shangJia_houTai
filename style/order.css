@@ -1,0 +1,165 @@
+/*Reset*/
+@made by kami;
+@charset "utf-8";
+.prove{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 50px 0;
+	text-align: right;
+}
+.input{
+	padding: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #e5e5e5;
+	margin: 0 10px;
+	text-align: left;
+}
+.prove .input{
+	width: 260px;
+}
+.prove a{
+	background: #06be94;
+	color: #ffffff;
+	border: 1px solid #06be94;
+	padding: 4px 15px; 
+	border-radius: 5px;
+}
+.prove a:hover{
+	background: #16ad8a;
+}
+.prove a.btns{
+	background: #ffffff;
+	color: #333333;
+	float: right;
+	padding: 5px 15px;
+	margin: 0 120px 0 50px;
+}
+.prove a:hover.btns{
+	background: #06be94;
+	color: #ffffff;
+}
+.package{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-top: 20px;
+	border-top: 1px solid #e5e5e5;
+}
+.package .line{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 10px 0;
+}
+.package .line h1{
+	color: #06be94;
+	font-size: 16px;
+}
+.package .line .line-l,.package .line .line-r{
+	width: 50%;
+	height: auto;
+	float: left;
+	text-align: left;
+}
+.package .line .line-l{
+	text-align: right;
+}
+.search{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding: 20px 0;
+}
+.search a{
+	background: #06be94;
+	color: #ffffff;
+	border: 1px solid #06be94;
+	padding: 5px 15px; 
+	border-radius: 5px;
+	float: left;
+	margin-left: 20px;
+}
+.search a:hover{
+	background: #16ad8a;
+}
+.search a.back{
+	background: #ffffff;
+	color: #666666;
+	float: left;
+	margin-right: 100px;
+	margin-left: 0;
+}
+.search a:hover.back{
+	background: #06be94;
+	color: #ffffff;
+}
+.search .input-box{
+	float: left;
+	margin-left: 20px;
+}
+.order-list{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.no-order{
+	width: 1018px;
+	_width:1020px;
+	float: left;
+	height: auto;
+	padding: 50px 0;
+	font-size: 18px;
+	border: 1px solid #e5e5e5;
+}
+.order-list .thead{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #06be94;
+	color: #ffffff;
+	line-height: 40px;
+}
+.order-list .tbody,.order-list .tbody .tr{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.order-list .tbody .tr{
+	border: 1px solid #e5e5e5;
+	line-height: 50px;
+	border-top: none;
+	width: 1018px;
+	_width:1020px;
+}
+.order-list .tbody .tr:hover{
+	background: #f8f8f8;
+}
+.order-list .time{
+	width: 160px;
+	float: left;
+}
+.order-list .name{
+	width: 160px;
+	float: left;
+}
+.order-list .sex{
+	width: 158px;
+	float: left;
+}
+.order-list .tel{
+	width: 160px;
+	float: left;
+}
+.order-list .package-name{
+	width: 380px;
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.order-list .package-name a:hover{
+	text-decoration: underline;
+}
