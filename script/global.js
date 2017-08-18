@@ -85,3 +85,7 @@ function changepassword(){
 jQuery(window).load(function(){
 	
 });
+
+/* x-add 高度等于当前窗口的高度 */
+$(".main-right").css('min-height',$(window).height());
+$(".main-left").css('min-height',$(window).height()); 

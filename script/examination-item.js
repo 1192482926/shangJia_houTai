@@ -1,6 +1,5 @@
 //time:217-05-03
-//made by: kami
-
+//made by: kami  
 //查看是否有体检项
 function noexamination(){
 	var commodity = jQuery(".tbody .tr").length;
@@ -109,7 +108,7 @@ jQuery(document).ready(function(){
 		}
 	});
 	//单个删除提示
-	jQuery(".order-list .operating a.del").on("click",function(){
+	jQuery(".order-list .operating .del").on("click",function(){
 		var _name = jQuery(this).parents(".tr").find(".item-name").text();
 		var popuptitle = "温馨提示";//弹窗标题
 		var popupcontent = "<p>您确定要删除体检项“<em>"+_name+"</em>”吗？</p>";//弹窗内容

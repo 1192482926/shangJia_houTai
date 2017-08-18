@@ -1,6 +1,8 @@
 /*Reset*/
 @made by kami;
 @charset "utf-8";
+.content{padding: 0 2%;}
+
 .input{
 	padding: 0 10px;
 	height: 28px;
@@ -14,12 +16,11 @@ input:focus.input{
 	box-shadow: 0 0 5px #cdcdcd;
 	border-color: #cdcdcd;
 }
-.search{
+.search{ 
 	width: 100%;
-	height: auto;
-	float: left;
+	height: auto; 
 	text-align: left;
-	padding: 20px 0;
+	/*padding: 20px 0;*/
 }
 .search a{
 	background: #06be94;
@@ -29,6 +30,7 @@ input:focus.input{
 	border-radius: 5px;
 	float: left;
 	margin-left: 30px;
+	margin: 20px 0 20px 30px;
 }
 .search a:hover{
 	background: #16ad8a;
@@ -43,10 +45,7 @@ input:focus.input{
 .search a:hover.back{
 	background: #06be94;
 	color: #ffffff;
-}
-.search .input-box{
-	float: left;
-}
+} 
 a.add-examination-item{
 	padding: 5px 15px;
 	background: #06be94;
@@ -68,70 +67,11 @@ a.add-examination-item i.icon-add{
 	vertical-align: middle;
 	margin-right: 5px;
 }
-.main-right .btns{
-	width: 100%;
-	height: auto;
-	float: left;
-	padding-bottom: 10px;
-	text-align: left;
-}
-.main-right .btns a{
-	margin-right: 20px;
-	float: left;
-	padding: 5px 15px;
-}
-.main-right .btns a.delete{
-	background: #f06969;
-	border: 1px solid #f06969;
-	color: #ffffff;
-	text-align: center;
-	border-radius: 3px;
-}
-.main-right .btns a:hover.delete{
-	background: #d94747;
-}
-.main-right .btns a.delete i.icon-delete{
-	width: 17px;
-	height: 17px;
-	overflow: hidden;
-	display: inline-block;
-	background: url(../images/icon.png) no-repeat -86px -55px;
-	vertical-align: middle;
-	margin-right: 5px;
-}
-.main-right .btns a.template-download{
-	background: #ffffff;
-	border: 1px solid #cccccc;
-	text-align: center;
-	border-radius: 3px;
-	padding: 6px 15px;
-}
-.main-right .btns a:hover.template-download{
-	border-color: #06be94;
-	color: #06be94;
-}
-.main-right .btns a.edit{
-	background: #f4b444;
-	border: 1px solid #f4b444;
-	color: #ffffff;
-	text-align: center;
-	border-radius: 3px;
-}
-.main-right .btns a:hover.edit{
-	background: #e4a434;
-}
-.main-right .btns a.edit i.icon-edit{
-	width: 17px;
-	height: 17px;
-	overflow: hidden;
-	display: inline-block;
-	background: url(../images/icon.png) no-repeat -59px -55px;
-	vertical-align: middle;
-	margin-right: 5px;
-}
+ 
 .condition{
 	float: left;
 	text-align: center;
+	margin: 20px 0;
 }
 .condition .condition-name{
 	width: 80px;
@@ -172,6 +112,7 @@ a.add-examination-item i.icon-add{
 	float: left;
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
+	background: #FFFFFF;
 }
 .condition .drop-down .select{
 	width: 100%;
@@ -214,7 +155,7 @@ a.add-examination-item i.icon-add{
 .condition .show .icon-dropdown{
 	background-position: -178px -55px;
 }
-.order-list{
+/*.order-list{
 	width: 100%;
 	height: auto;
 	float: left;
@@ -334,7 +275,26 @@ a.add-examination-item i.icon-add{
 }
 .order-list .operating a:hover.del{
 	background: #d94747;
-}
+}*/
 .pop-up .pop-up-content p em{
 	color: #06be94;
 }
+
+.order-list .xiaJia,
+.order-list .shangJia,
+.order-list .delete,
+.order-list .update{border: none;width: 55px;height: 23px;font-size: 12px;border-radius: 4px;cursor: pointer;}
+.order-list .xiaJia{background: #E2E8EA;}
+.order-list .shangJia{background: #4CA3DC;color: #FFFFFF;}
+.order-list .delete{background: #FFFFFF;color: #63BB7E;border: 1px solid #EBEBEB;}
+.order-list .update{background: #FFFFFF;color: #F08254;border: 1px solid #EBEBEB;}
+
+/* 操作 */
+.operate{ padding: 20px 0;}
+.operate a{display: block;float: left;padding: 0 15px; height: 24px;line-height: 24px; border: 1px solid #E6EAEC;background: #FFFFFF;border-radius: 4px;margin-right: 15px;font-size: 12px;text-align: left;}
+.operate a i{width: 14px;display: block;height: 14px;float: left;margin:5px 8px 5px 0; } 
+.operate .Import-icon i{background: url(../images/examination-item/select-icon.png)no-repeat 0 0;background-size: 100%;}
+.operate .add-icon i{background: url(../images/examination-item/select-icon.png)no-repeat 0 -39px;background-size: 100%;}
+.operate .delete-icon i{background: url(../images/examination-item/select-icon.png)no-repeat 0 -79px;background-size: 100%;}
+.operate .class-icon i{background: url(../images/examination-item/select-icon.png)no-repeat 0 -119px;background-size: 100%;}
+

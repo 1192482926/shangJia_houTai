@@ -1,6 +1,8 @@
 /*Reset*/
 @made by kami;
 @charset "utf-8";
+.content{/*border: 1px solid red;*/padding: 0 2%;}
+
 .input{
 	padding: 0 10px;
 	height: 28px;
@@ -15,12 +17,11 @@ input:focus.input{
 	border-color: #cdcdcd;
 }
 .search{
-	width: 100%;
-	height: auto;
-	float: left;
+	width: 100%; 
 	text-align: left;
-	padding: 20px 0;
+	/*padding: 20px 0;*/
 }
+.search a, .search .condition, .search .input-box{margin: 20px 0;}
 .search a{
 	background: #06be94;
 	color: #ffffff;
@@ -67,6 +68,7 @@ input:focus.input{
 	border-radius: 3px;
 	margin-left: 5px;
 	position: relative;
+	background: #FFFFFF;
 }
 .condition .calendar .date{
 	line-height: 30px;
@@ -131,94 +133,11 @@ input:focus.input{
 .condition .show .icon-dropdown{
 	background-position: -178px -55px;
 }
-.order-list{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.no-order{
-	width: 1018px;
-	_width:1020px;
-	float: left;
-	height: auto;
-	padding: 50px 0;
-	font-size: 18px;
-	border: 1px solid #e5e5e5;
-}
-.order-list .thead{
-	width: 100%;
-	height: auto;
-	float: left;
-	background: #06be94;
-	color: #ffffff;
-	line-height: 40px;
-}
-.order-list .tbody,.order-list .tbody .tr{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.order-list .tbody .tr{
-	border: 1px solid #e5e5e5;
-	line-height: 50px;
-	border-top: none;
-	width: 1018px;
-	_width:1020px;
-}
-.order-list .tbody .tr:hover{
-	background: #f8f8f8;
-}
-.order-list .time{
-	width: 130px;
-	float: left;
-}
-.order-list .name{
-	width: 160px;
-	float: left;
-}
-.order-list .sex{
-	width: 80px;
-	float: left;
-}
-.order-list .tel{
-	width: 160px;
-	float: left;
-}
-.order-list .operating{
-	width: 130px;
-	float: left;
-}
-.order-list .operating a{
-	padding: 4px 15px;
-	margin: 0 5px;
-	border-radius: 3px;
-}
-.order-list .operating a.upload{
-	border: 1px solid #06be94;
-	color: #06be94;
-}
-.order-list .operating a:hover.upload{
-	background: #06be94;
-	color: #ffffff;
-}
-.order-list .operating a.view{
-	background: #06be94;
-	border: 1px solid #06be94;
-	color: #ffffff;
-}
-.order-list .operating a:hover.view{
-	background: #16ad8a;
-}
-.order-list .package-name{
-	width: 320px;
-	float: left;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.order-list .package-name a:hover{
-	text-decoration: underline;
-}
+.order-list .update, .order-list .view, .order-list .upload{width: 55px;height: 23px;font-size: 12px;border-radius: 4px;cursor: pointer;border: none;}
+.order-list .upload{background: #4CA3DC;color: #FFFFFF;}
+.order-list .view{background: #E2E8EA;color: #000;}
+.order-list .update{border: 1px solid #EEEEEE;color: #5BB877;}
+
 .pop-up .popupline{
 	width: 100%;
 	height: auto;
@@ -334,3 +253,7 @@ input:focus.input{
 	margin-right: 500px;
 	margin-top: 20px;
 }
+
+
+
+

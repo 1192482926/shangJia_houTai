@@ -12,7 +12,8 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0
+	border-spacing: 0;
+	text-align: center;
 }
 fieldset,img {
 	border: 0;
@@ -65,6 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 .wrap{
+	position: relative;
 	margin:0 auto;
 	width: 100%;
 }
@@ -103,7 +105,7 @@ a:hover.back-top span{
 .header{ 
 	padding: 0 2%;
 	height: 80px;
-	border-bottom: 1px solid #06be94;
+	border-bottom: 1px solid #E9EEEF;
 	/*min-width: 1200px;*/
 	background: #ffffff;
 	line-height: 80px;
@@ -135,17 +137,22 @@ a:hover.back-top span{
 @左侧导航
 ******/
 .main-left{
+	background: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
 	box-sizing: border-box;
-	width: 15%;
-	float: left;
-	position: relative;
-	padding: 0 0 65px 0; 
+	/*width: 15%;*/
+	width: 220px; 
+	padding: 0 0 65px 0;  
+	border-right: 1px solid #E3E9EB;
+	height: 100%; 
 }
 .main-left .nav-list{ 
 	display: block;
 	line-height: 50px;
 	text-align: left;
-	text-indent: 25%;
+	text-indent: 17%;
 }
 .main-left .nav-list:hover{
 	color: #FFFFFF; 
@@ -156,12 +163,12 @@ a:hover.back-top span{
 	background: #00C687;
 }
 /* x-add */
-.left-logo{height: 230px;width: 100%;display: table;}
+.left-logo{height: 190px;width: 100%;display: table;border-bottom: 1px solid #E9EEEF;}
 .left-logo .line-height{display: table-cell;vertical-align: middle;} 
 .left-logo .line-height .logo-ft{line-height: 25px;}
 .left-logo .line-height img{width: 50%;}
 
-.main-left .nav-list span{padding: 6px 15px;margin-right: 2%; }
+.main-left .nav-list span{padding: 6px 17px;margin-right: 2%; }
 .main-left .nav-list:nth-of-type(1) span{background: url(../images/common/list-logo.png)no-repeat 0 10px;}
 .main-left .nav-list:nth-of-type(2) span{background: url(../images/common/list-logo.png)no-repeat 0 -20px;}
 .main-left .nav-list:nth-of-type(3) span{background: url(../images/common/list-logo.png)no-repeat 0 -54px;}
@@ -186,13 +193,14 @@ a:hover.back-top span{
 @页面右侧
 ******/
 .main-right{
+	position: relative;
 	box-sizing: border-box;
 	position: relative;
-	width: 85%;
+	width: 100%;
+	padding-left: 220px;
 	float: right;
-	padding-bottom: 50px; 
-	background: #F1F2F4;
-	border-left: 1px solid #E3E9EB; 
+	/*padding-bottom: 50px;*/ 
+	background: #F1F2F4; 
 }
 
 /*****
@@ -357,4 +365,18 @@ a:hover.back-top span{
 	height: 30px;
 	line-height: 30px;
 }
+
+/* 名单 */ 
+.order-list{width: 100%;background: #FFFFFF;text-align: center;}
+.order-list .table{width: 100%;text-align: center;}
+.order-list .table tr{text-align: center;height: 46px;border-top: 1px solid #F6F6F6;}
+.order-list .table tr:last-child{border-bottom: none;}
+.order-list .table tr th{text-align: center;font-weight: bold;font-size: 12px;color: #000;}
+.order-list .table tr td{text-align: center;font-size: 12px;color: #757979;cursor: pointer;}
+.order-list .table .tbody tr:hover{background: #F9F9F9;}  
+
+/* 暂无状态 */
+.no-order{padding: 50px 0;font-size: 17px;}  
+.no-order .no_href{color: #06BE94;font-size: 14px;margin-left: 10px;}
+.no-order .no_href:hover{text-decoration: underline;}
 

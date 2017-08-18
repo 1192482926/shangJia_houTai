@@ -30,7 +30,7 @@ jQuery(document).ready(function(){
 		jQuery(".drop-down").removeClass("show");
 	});
 	//显示上传体检报告弹窗
-	jQuery(".order-list .operating a.upload").live("click",function(){
+	jQuery(".order-list .operating .upload").live("click",function(){
 		var _name = jQuery(this).parents(".tr").find(".package-name").text();
 		var popuptitle = "上传体检报告";//弹窗标题
 		var popupcontent = "<div class='popupline'><div class='text'>上传体检报告：</div><div class='fileurl'></div><a href='javascript:;'>选择文件</a></div><div class='popupline'><em>（支持上传的文件格式：word、excel、jpg、png,文件大小不能超过5M）</em></div><div class='clear'></div>";//弹窗内容
@@ -41,7 +41,7 @@ jQuery(document).ready(function(){
 		popupshow(popuptitle,popupcontent,btns,backfunction,fuvalue);
 	});
 	//查看体检报告
-	jQuery(".order-list .operating a.view").live("click",function(){
+	jQuery(".order-list .operating .view").live("click",function(){
 		var _name = jQuery(this).parents(".tr").find(".name").text();
 		var _page = jQuery(".view-report .report-list .report-box").size();
 		jQuery(".view-close em").text(_name);

@@ -1,7 +1,7 @@
 //time:217-05-03
 //made by: kami
 //查看是否有体检项
-function noPackage(){
+/*function noPackage(){
 	var commodity = jQuery(".tbody .tr").length;
 	if(commodity<1){
 		jQuery(".no-package").show();
@@ -9,12 +9,12 @@ function noPackage(){
 	else{
 		jQuery(".no-package").hide();
 	}
-}
+}*/
 //删除体检套餐
 function DeletePackage(fuvalue){
 	jQuery(".tbody .tr").eq(fuvalue).remove();
 	closepopup();
-	noPackage();
+//	noPackage();
 }
 jQuery(document).ready(function(){
 	//展开下拉项
@@ -40,7 +40,7 @@ jQuery(document).ready(function(){
 		jQuery(".drop-down").removeClass("show");
 	});
 	//删除提示
-	jQuery(".order-list .operating a.del").on("click",function(){
+	jQuery(".order-list .operating .del").on("click",function(){
 		var _name = jQuery(this).parents(".tr").find(".package-name").text();
 		var popuptitle = "温馨提示";//弹窗标题
 		var popupcontent = "<p>您确定要删除套餐“<em>"+_name+"</em>”吗？</p>";//弹窗内容

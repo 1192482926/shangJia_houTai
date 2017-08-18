@@ -1,6 +1,9 @@
 /*Reset*/
 @made by kami;
 @charset "utf-8";
+
+.content{padding: 0 2%;}
+
 .input{
 	padding: 0 10px;
 	height: 28px;
@@ -15,13 +18,11 @@ input:focus.input{
 	border-color: #cdcdcd;
 }
 .search{
-	width: 100%;
-	height: auto;
-	float: left;
-	text-align: left;
-	padding: 20px 0;
+	width: 100%;  
+	text-align: left;  
 }
-.search a{
+.search .find, .search .input-box, .search .condition{margin: 20px 0;}
+.search .find{
 	background: #06be94;
 	color: #ffffff;
 	border: 1px solid #06be94;
@@ -30,25 +31,25 @@ input:focus.input{
 	float: left;
 	margin-left: 30px;
 }
-.search a:hover{
+.search .find:hover{
 	background: #16ad8a;
 }
-.search a.back{
+.search .find.back{
 	background: #ffffff;
 	color: #333333;
 	float: left;
 	margin-right: 100px;
 	margin-left: 0;
 }
-.search a:hover.back{
+.search .find:hover.back{
 	background: #06be94;
 	color: #ffffff;
 }
 .search .input-box{
 	float: left;
-	margin-left: 20px;
+	margin-left: 0;
 }
-.condition{
+.condition{ 
 	float: left;
 	text-align: center;
 }
@@ -84,6 +85,7 @@ input:focus.input{
 	right: 10px;
 }
 .condition .drop-down{
+	background: #FFFFFF;
 	position: relative;
 	margin-left: 5px;
 	width: 95px;
@@ -156,11 +158,11 @@ a.add-package i.icon-add{
 	vertical-align: middle;
 	margin-right: 5px;
 }
-.order-list{
+/*.order-list{
 	width: 100%;
 	height: auto;
 	float: left;
-}
+}*/
 .no-package{
 	width: 1018px;
 	_width:1020px;
@@ -177,89 +179,40 @@ a.add-package i.icon-add{
 }
 .no-package a:hover{
 	text-decoration: underline;
-}
-.order-list .thead{
-	width: 100%;
-	height: auto;
-	float: left;
-	background: #06be94;
-	color: #ffffff;
-	line-height: 40px;
-}
-.order-list .tbody,.order-list .tbody .tr{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.order-list .tbody .tr{
-	border: 1px solid #e5e5e5;
-	line-height: 50px;
-	border-top: none;
-	width: 1018px;
-	_width:1020px;
-}
-.order-list .tbody .tr:hover{
-	background: #f8f8f8;
-}
-.order-list .price{
-	width: 110px;
-	float: left;
-}
-.order-list .type{
-	width: 200px;
-	float: left;
-}
-.order-list .operating{
-	width: 220px;
-	float: left;
-}
-.order-list .operating a{
-	padding: 4px 15px;
-	margin: 0 5px;
-	border-radius: 3px;
-}
-.order-list .operating a.off{
-	border: 1px solid #06be94;
-	color: #06be94;
-}
-.order-list .operating a:hover.off{
-	background: #06be94;
-	color: #ffffff;
-}
-.order-list .operating a.on{
-	background: #06be94;
-	border: 1px solid #06be94;
-	color: #ffffff;
-}
-.order-list .operating a:hover.on{
-	background: #16ad8a;
-}
-.order-list .operating a.edit{
-	background: #f4b444;
-	border: 1px solid #f4b444;
-	color: #ffffff;
-}
-.order-list .operating a:hover.edit{
-	background: #e4a434;
-}
-.order-list .operating a.del{
-	background: #f06969;
-	border: 1px solid #f06969;
-	color: #ffffff;
-}
-.order-list .operating a:hover.del{
-	background: #d94747;
-}
-.order-list .package-name{
-	width: 355px;
-	float: left;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.order-list .package-name a:hover{
-	text-decoration: underline;
-}
+} 
 .pop-up .pop-up-content p em{
 	color: #06be94;
 }
+
+/* 表单按钮 */
+.order-list .xiaJia,
+.order-list .shangJia,
+.order-list .delete,
+.order-list .update{border: none;width: 55px;height: 23px;font-size: 12px;border-radius: 4px;cursor: pointer;}
+.order-list .xiaJia{background: #E2E8EA;}
+.order-list .shangJia{background: #4CA3DC;color: #FFFFFF;}
+.order-list .delete{background: #FFFFFF;color: #63BB7E;border: 1px solid #EBEBEB;}
+.order-list .update{background: #FFFFFF;color: #F08254;border: 1px solid #EBEBEB;}
+
+
+/* 操作 */
+.operate{ padding: 20px 0;}
+.operate a{display: block;float: left; padding: 0 15px; height: 24px;line-height: 24px; border: 1px solid #E6EAEC;background: #FFFFFF;border-radius: 4px;margin-right: 15px;font-size: 12px;text-align: left;}
+.operate a i{width: 14px;display: block;height: 14px;float: left;margin:5px 8px 5px 0;} 
+.operate .add-icon i{background: url(../images/package/sl-icon.png)no-repeat 0 0;background-size: 100%;}
+.operate .update-icon i{background: url(../images/package/sl-icon.png)no-repeat 0 -39px;background-size: 100%;}
+.operate .delete-icon i{background: url(../images/package/sl-icon.png)no-repeat 0 -79px;background-size: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

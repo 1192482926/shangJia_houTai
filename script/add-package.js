@@ -89,15 +89,16 @@ jQuery(document).ready(function(){
 			for(var i = 0;i < _size;i++){
 				if(_text === jQuery(this).parents(".row").find(".chose li").eq(i).text().replace(/(^\s*)|(\s*$)/g, "")){
 					jQuery(this).parents(".row").find(".chose li").eq(i).remove();
-					jQuery(this).parents(".department").find(".department-name span em").text(jQuery(this).parents(".row").find(".chose li").size());
+					jQuery(this).parents(".department").find(".column-sel em").text(jQuery(this).parents(".row").find(".chose li").size());
 				}
 			}
 		}
 		else{//添加
 			jQuery('<li><i></i>'+_text+'</li>').appendTo(jQuery(this).parents(".row").find(".chose"));
-			jQuery(this).parents(".department").find(".department-name span em").text(jQuery(this).parents(".row").find(".chose li").size());
+			jQuery(this).parents(".department").find(".column-sel em").text(jQuery(this).parents(".row").find(".chose li").size());
 		}
 		jQuery(this).find("i").toggleClass("on");
+		
 	});
 	//删除按钮删除已选项
 	jQuery(".department .department-list .chose li i").live("click",function(){
@@ -108,7 +109,7 @@ jQuery(document).ready(function(){
 				jQuery(this).parents(".row").find(".item li").eq(i).find("i").removeClass("on");
 			}
 		}
-		jQuery(this).parents(".department").find(".department-name span em").text(jQuery(this).parents(".row").find(".chose li").size()-1);
+		jQuery(this).parents(".department").find(".column-sel em").text(jQuery(this).parents(".row").find(".chose li").size()-1);
 		jQuery(this).parent("li").remove();
 		
 	});

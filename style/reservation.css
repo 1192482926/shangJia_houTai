@@ -1,6 +1,10 @@
 /*Reset*/
 @made by kami;
 @charset "utf-8";
+
+.content{padding: 0 2%;}
+
+
 .input{
 	padding: 0 10px;
 	height: 28px;
@@ -15,32 +19,32 @@ input:focus.input{
 	border-color: #cdcdcd;
 }
 .search{
-	width: 100%;
-	height: auto;
-	float: left;
+	width: 100%; 
 	text-align: left;
-	padding: 20px 0;
+	
+	/*border: 1px solid red;*/
+	font-size: 13px;
 }
-.search a{
+.search .find, .search .input-box, .search .condition, .search{margin: 10px 0;} 
+.search .find{
+	float: left; 
 	background: #06be94;
 	color: #ffffff;
 	border: 1px solid #06be94;
-	padding: 5px 15px; 
-	border-radius: 5px;
-	float: left;
+	padding: 6px 15px; 
+	border-radius: 5px; 
 	margin-left: 30px;
 }
-.search a:hover{
+.search .find:hover{
 	background: #16ad8a;
 }
-.search a.back{
+.search .find.back{
 	background: #ffffff;
-	color: #333333;
-	float: left;
+	color: #333333; 
 	margin-right: 100px;
 	margin-left: 0;
 }
-.search a:hover.back{
+.search .find:hover.back{
 	background: #06be94;
 	color: #ffffff;
 }
@@ -48,7 +52,7 @@ input:focus.input{
 	float: left;
 	margin-left: 20px;
 }
-.condition{
+.condition{ 
 	float: left;
 	text-align: center;
 }
@@ -59,6 +63,7 @@ input:focus.input{
 	float: left;
 	text-align: right;
 }
+.condition .condition-box{background: #FFFFFF;}
 .condition .calendar{
 	width: 134px;
 	height: 28px;
@@ -130,83 +135,4 @@ input:focus.input{
 }
 .condition .show .icon-dropdown{
 	background-position: -178px -55px;
-}
-.order-list{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.no-order{
-	width: 1018px;
-	_width:1020px;
-	float: left;
-	height: auto;
-	padding: 50px 0;
-	font-size: 18px;
-	border: 1px solid #e5e5e5;
-}
-.order-list .thead{
-	width: 100%;
-	height: auto;
-	float: left;
-	background: #06be94;
-	color: #ffffff;
-	line-height: 40px;
-}
-.order-list .tbody,.order-list .tbody .tr{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.order-list .tbody .tr{
-	border: 1px solid #e5e5e5;
-	line-height: 50px;
-	border-top: none;
-	width: 1018px;
-	_width:1020px;
-}
-.order-list .tbody .tr:hover{
-	background: #f8f8f8;
-}
-.order-list .tbody div{
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.order-list .time{
-	width: 130px;
-	float: left;
-}
-.order-list .name{
-	width: 160px;
-	float: left;
-}
-.order-list .sex{
-	width: 80px;
-	float: left;
-}
-.order-list .tel{
-	width: 160px;
-	float: left;
-}
-.order-list .price{
-	width: 100px;
-	float: left;
-}
-.order-list .status{
-	width: 130px;
-	float: left;
-}
-.order-list .status .carry-out{
-	color: #06be94;
-}
-.order-list .status .abolishment{
-	color: #f06969;
-}
-.order-list .package-name{
-	width: 255px;
-	float: left;
-}
-.order-list .package-name a:hover{
-	text-decoration: underline;
-}
+} 

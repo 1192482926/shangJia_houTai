@@ -2,6 +2,11 @@
 //made by: kami
 
 jQuery(document).ready(function(){
+	//
+	jQuery(".nature li").live("click",function(){
+		jQuery(".nature li").removeClass("on");
+		jQuery(this).addClass("on");
+	}); 
 	//展开下拉项
 	jQuery(".drop-down").live("click",function(e){
 		e.stopPropagation();

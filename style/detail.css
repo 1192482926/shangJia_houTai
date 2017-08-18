@@ -1,6 +1,7 @@
 /*Reset*/
 @made by kami;
 @charset "utf-8";
+.content{padding: 0 2%; }
 .input{
 	padding: 0 10px;
 	height: 28px;
@@ -17,10 +18,11 @@ input:focus.input{
 .search{
 	width: 100%;
 	height: auto;
-	float: left;
+	/*float: left;*/
 	text-align: left;
-	padding: 20px 0;
+	/*padding: 20px 0;*/ 
 }
+.search a, .search .condition, .search .input-box{margin: 20px 0;}
 .search a{
 	background: #06be94;
 	color: #ffffff;
@@ -138,16 +140,17 @@ input:focus.input{
 }
 .total-amount{
 	width: 100%;
-	height: auto;
-	float: left;
+	height: auto; 
+	/*border: 1px solid red;*/
+	margin: 20px 0;
 }
 .total-amount .fr{
-	float: right;
-	margin: 0 20px 0 0;
-	font-size: 18px;
-	line-height: 30px;
+	float: right; 
+	font-size: 14px; 
+	background: #FFFFFF;
+	padding: 6px 15px;
 }
-.total-amount .fr i{
+/*.total-amount .fr i{
 	width: 25px;
 	height: 23px;
 	float: left;
@@ -155,84 +158,28 @@ input:focus.input{
 	background: url(../images/icon.png) no-repeat -27px -185px;
 	overflow: hidden;
 	margin-right: 10px;
-}
+}*/
+.total-amount .fr em{color: #F18669;}
+
 .total-amount a{
-	float: left;
-	border: 1px solid #db4848;
+	float: left; 
 	color: #db4848;
-	padding: 3px 15px;
+    height: 24px;
+    line-height: 24px;
 	border-radius: 5px;
+	font-size: 12px;
+	margin-right: 15px;
+	padding: 0 15px;
+	background: #FFFFFF;
+} 
+.total-amount a i{
+    width: 14px;
+    display: block;
+    height: 14px;
+    float: left;
+    margin: 5px 8px 5px 0;
+    /*border: 1px solid red;*/
 }
-.order-list{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.no-order{
-	width: 1018px;
-	_width:1020px;
-	float: left;
-	height: auto;
-	padding: 50px 0;
-	font-size: 18px;
-	border: 1px solid #e5e5e5;
-}
-.order-list .thead{
-	width: 100%;
-	height: auto;
-	float: left;
-	background: #06be94;
-	color: #ffffff;
-	line-height: 40px;
-}
-.order-list .tbody,.order-list .tbody .tr{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.order-list .tbody .tr{
-	border: 1px solid #e5e5e5;
-	line-height: 50px;
-	border-top: none;
-	width: 1018px;
-	_width:1020px;
-}
-.order-list .tbody .tr:hover{
-	background: #f8f8f8;
-}
-.order-list .tbody div{
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.order-list .time{
-	width: 100px;
-	float: left;
-}
-.order-list .name{
-	width: 100px;
-	float: left;
-}
-.order-list .sex{
-	width: 60px;
-	float: left;
-}
-.order-list .pay-by{
-	width: 80px;
-	float: left;
-}
-.order-list .tel{
-	width: 120px;
-	float: left;
-}
-.order-list .price,.order-list .money{
-	width: 95px;
-	float: left;
-}
-.order-list .package-name,.order-list .code{
-	width: 180px;
-	float: left;
-}
-.order-list .package-name a:hover{
-	text-decoration: underline;
-}
+.total-amount .total i{background: url(../images/detail/total-icon.png)no-repeat 0 0;background-size: 100%;}
+.total-amount .export i{background: url(../images/detail/total-icon.png)no-repeat 0 -60px;background-size: 100%;}
+

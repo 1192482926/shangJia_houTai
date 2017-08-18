@@ -12,121 +12,169 @@
 		<link rel="icon" sizes="16x16" href="/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="style/global.css?v=1.0.1" />
 		<link rel="stylesheet" type="text/css" href="style/index.css?v=1.0.1" />
-		<script type="text/javascript" src="script/jquery.js"></script>
-		<script type="text/javascript" src="script/global.js?v=1.0.1"></script>
-		<script type="text/javascript" src="script/index.js?v=1.0.1"></script>
 		<!--[if lte IE 9]>
 	<script type="text/javascript" src="script/html5.js"></script>
 	<! [endif]-->
 	</head>
 
-	<body> 
+	<body>
 		<section class="main">
 			<div class="wrap clearfix">
 				<div class="main-right">
 					<!-- x-update -->
 					<div class="header clearfix">
-						<span class="welcome">Welcome，<em>成都八一骨科医院体检中心</em></span>
-
+						<span class="welcome">Welcome，<em>成都八一骨科医院体检中心</em></span> 
 						<a href="javascript:;" class="icon-logout"></a>
-						<a href="javascript:topset();" class="icon-set"></a>
-
+						<a href="javascript:topset();" class="icon-set"></a> 
 					</div>
 					<!-- x-update end -->
 
-					<div class="content">
-						<div class="add-step">
-							添加体检套餐流程：<span>1、设置项目类别</span><span> >> </span><span>2、设置详细类目</span>
-							<span> >> </span><span>3、设置体检项目</span><span> >> </span><span>4、设置体检套餐</span>
+					<div class="content ">
+						<div class="add-step clearfix">
+							<!--添加体检套餐流程：<span>1、设置项目类别</span><span> >> </span><span>2、设置详细类目</span>
+							<span> >> </span><span>3、设置体检项目</span><span> >> </span><span>4、设置体检套餐</span>-->
+
+							<div class="step-list clearfix">
+								<span class="step-num"></span>
+								<p class="step-tit">设置检查类别</p>
+								<p class="step-dg">为体检项目区分类型与性质</p>
+							</div>
+							<div class="jianTou"></div>
+
+							<div class="step-list clearfix">
+								<span class="step-num"></span>
+								<p class="step-tit">设置项目大类</p>
+								<p class="step-dg">设置体检项目所属科室信息</p>
+							</div>
+
+							<div class="jianTou"></div>
+
+							<div class="step-list clearfix">
+								<span class="step-num"></span>
+								<p class="step-tit">设置检查项目</p>
+								<p class="step-dg">对应分类填写检查项目的价格及意义</p>
+							</div>
+
+							<div class="jianTou"></div>
+
+							<div class="step-list clearfix">
+								<span class="step-num"></span>
+								<p class="step-tit">设置体检套餐</p>
+								<p class="step-dg">填写套餐基本信息，选择体检项目</p>
+							</div>
+
 						</div>
-						<div class="statistics">
+						<div class="statistics clearfix">
 							<div class="statistics-box tjzs">
-								<div class="box-icon"></div>
-								<div class="box-name">机构体检总数</div>
-								<div class="box-line"></div>
-								<div class="box-amount"><em>600</em>人</div>
+								<div class="box-icon"><img src="images/index/tjzs.png"></div>
+								<div class="box-name">今日预约总人数</div>
+								<div class="box-amount">600</div>
 							</div>
 							<div class="statistics-box jryy">
-								<div class="box-icon"></div>
-								<div class="box-name">今日预约总数</div>
-								<div class="box-line"></div>
-								<div class="box-amount"><em>20</em>人</div>
+								<div class="box-icon"><img src="images/index/jryy.png"></div>
+								<div class="box-name">今日交易金额</div>
+								<div class="box-amount">￥600</div>
 							</div>
 							<div class="statistics-box jyje">
-								<div class="box-icon"></div>
-								<div class="box-name">今日交易金额</div>
-								<div class="box-line"></div>
-								<div class="box-amount"><em>￥6000.00</em></div>
+								<div class="box-icon"><img src="images/index/jyje.png"></div>
+								<div class="box-name">机构体检总人数</div>
+								<div class="box-amount">600</div>
 							</div>
 						</div>
-						<div class="panel-name">快速验证</div>
-						<div class="prove">
-							体检验证码：<input type="text" value="" class="input" />
-							<a href="javascript:;">确定</a>
+
+						<div class="yanZheng clearfix">
+							<div class="yzBox clearfix">
+								<div class="box-icon"><img src="images/index/yanzheng.png"></div>
+								<div class="box-content">
+									<div class="tit">快速验证订单</div>
+									<input type="text" class="yz_shuru" placeholder="请输入体验验证码" />
+									<button type="button" class="tiJiao">验证</button>
+								</div>
+							</div>
+							<div class="yzBox">
+								<div class="result_tit">验证结果</div>
+								<div class="result_content clearfix">
+									<div class="re_left">
+										<div class="re_list clearfix">
+											<span class="tit">体检人：</span>
+											<span class="answer">洋洋</span>
+										</div>
+										<div class="re_list clearfix">
+											<span class="tit">手机号码：</span>
+											<span class="answer">13666154556</span>
+										</div>
+										<div class="re_list clearfix">
+											<span class="tit">性别：</span>
+											<span class="answer">女</span>
+										</div>
+										<div class="re_list clearfix">
+											<span class="tit">体检套餐：</span>
+											<span class="answer">入职体检A套餐</span>
+										</div>
+										<div class="re_list clearfix">
+											<span class="tit">套餐价格：</span>
+											<span class="answer">120元</span>
+										</div>
+									</div>
+									<div class="re_right clearfix">
+										<button type="button" class="re_true">使用</button>
+										<button type="button" class="re_false">取消</button>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="package">
-							<div class="line">
-								<h1>订单信息</h1>
-							</div>
-							<div class="line">
-								<div class="line-l">体检人：</div>
-								<div class="line-r">高须龙儿</div>
-							</div>
-							<div class="line">
-								<div class="line-l">性别：</div>
-								<div class="line-r">男✘✘✔✔✘</div>
-							</div>
-							<div class="line">
-								<div class="line-l">身份证：</div>
-								<div class="line-r">512501197203035172</div>
-							</div>
-							<div class="line">
-								<div class="line-l">手机号：</div>
-								<div class="line-r">13888888888</div>
-							</div>
-							<div class="line">
-								<div class="line-l">套餐：</div>
-								<div class="line-r">入职体检</div>
-							</div>
-							<div class="line">
-								<div class="line-l">价格：</div>
-								<div class="line-r">￥120.00</div>
-							</div>
-						</div>
-						<div class="panel-name">今日预约</div>
+
+						<div class="panel-name">今日体检名单</div>
 						<div class="order-list">
-							<div class="thead">
-								<div class="name">姓名</div>
-								<div class="sex">性别</div>
-								<div class="tel">手机号</div>
-								<div class="package-name">套餐</div>
-								<div class="status">订单状态</div>
-							</div>
-							<div class="tbody">
-								<!--没有任何订单，显示 no-order-->
-								<div class="no-order">暂无预约</div>
-								<div class="tr">
-									<div class="name">高须龙儿</div>
-									<div class="sex">男</div>
-									<div class="tel">13888888888</div>
-									<div class="package-name">入职体检</div>
-									<div class="status">未体检</div>
-								</div>
-								<div class="tr">
-									<div class="name">逢坂大河</div>
-									<div class="sex">女</div>
-									<div class="tel">15888888888</div>
-									<div class="package-name">入职体检</div>
-									<div class="status"><em class="abolishment">已取消</em></div>
-								</div>
-								<div class="tr">
-									<div class="name">栉枝实乃梨</div>
-									<div class="sex">女</div>
-									<div class="tel">18988888888</div>
-									<div class="package-name">入职体检</div>
-									<div class="status"><em class="carry-out">已体检</em></div>
-								</div>
-							</div>
+							<!--  暂无  no-order  -->
+							<div class="no-order">暂无名单</div>
+							<table class="table">
+								<thead class="thead">
+									<tr>
+										<th class="num">序号</th>
+										<th class="name">体检人姓名</th>
+										<th class="sex">性别</th>
+										<th class="marriage">婚否</th>
+										<th class="tel">手机号</th>
+										<th class="package-name">预约套餐</th>
+										<th class="price">预约价格</th>
+										<th class="status">状态</th>
+									</tr> 
+								</thead>
+								<tbody class="tbody">
+									<tr class="tr">
+										<td class="num">1</td>
+										<td class="name">洋洋</td>
+										<td class="sex">女</td>
+										<td class="marriage">未婚</td>
+										<td class="tel">13666154565</td>
+										<td class="package-name">入职体检A套餐</td>
+										<td class="price">120元</td>
+										<td class="status">完成体验</td>
+									</tr>
+									<tr class="tr">
+										<td class="num">1</td>
+										<td class="name">洋洋</td>
+										<td class="sex">女</td>
+										<td class="marriage">未婚</td>
+										<td class="tel">13666154565</td>
+										<td class="package-name">入职体检A套餐</td>
+										<td class="price">120元</td>
+										<td class="status">已取消</td>
+									</tr>
+									<tr class="tr">
+										<td class="num">1</td>
+										<td class="name">洋洋</td>
+										<td class="sex">女</td>
+										<td class="marriage">未婚</td>
+										<td class="tel">13666154565</td>
+										<td class="package-name">入职体检A套餐</td>
+										<td class="price">120元</td>
+										<td class="status">未体检</td>
+									</tr>
+								</tbody>
+							</table>
+
 						</div>
 						<div class="page">
 							<span>共56条记录</span>
@@ -138,10 +186,8 @@
 							<a href="javascript:;">5</a>
 							<a href="javascript:;">6</a>
 							<a href="javascript:;" class="next" title="下一页">下一页</a>
-						</div>
-
-					</div>
-
+						</div> 
+					</div> 
 				</div>
 				<div class="main-left">
 					<!-- x-add -->
@@ -153,11 +199,11 @@
 					</div>
 					<!-- x-add end -->
 					<a class="nav-list on" href="index.html"><span></span>首页</a>
-					<a class="nav-list" href="order.html"><span></span>订单列表</a>
-					<a class="nav-list" href="reservation.html"><span></span>体检列表</a>
-					<a class="nav-list" href="package.html"><span></span>套餐管理</a>
-					<a class="nav-list" href="examination-item.html"><span></span>体检项目</a>
-					<a class="nav-list" href="report.html"><span></span>体检报告</a>
+					<a class="nav-list" href="order.html"><span></span>订单验证</a>
+					<a class="nav-list" href="reservation.html"><span></span>预约体检</a>
+					<a class="nav-list" href="package.html"><span></span>体检套餐</a>
+					<a class="nav-list" href="examination-item.html"><span></span>检查项目</a>
+					<a class="nav-list" href="report.html"><span></span>报告中心</a>
 					<a class="nav-list" href="statistics.html"><span></span>数据统计</a>
 					<a class="nav-list" href="hospital.html"><span></span>机构信息</a>
 				</div>
@@ -165,5 +211,7 @@
 			</div>
 		</section>
 	</body>
-
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/global.js?v=1.0.1"></script>
+	<script type="text/javascript" src="script/index.js?v=1.0.1"></script> 
 </html>

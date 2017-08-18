@@ -1,6 +1,24 @@
 /*Reset*/
 @made by kami;
 @charset "utf-8";
+
+.main-right .content{margin: 0 auto;width: 55%;height: 445px;background: #FFFFFF;margin-top: 100px;border-radius: 7px;}
+.content .ct-tit{font-size: 15px; height: 65px;line-height: 65px;background: #4CA3DC;color: #FFFFFF;text-align: center;border-top-right-radius: 7px;border-top-left-radius: 7px;}
+.content .order-box{box-sizing: border-box;padding: 0 16%; }
+.content .order-box .order-tit{ text-align: left;padding: 35px 0 15px 0;font-size: 14px;}
+.content .order-box .order-yz input{box-sizing: border-box;width: 60%;height: 36px;background: #E6EBED;border: none;padding: 0 15px;float: left;border-radius: 5px;}
+.content .order-box .order-yz button{box-sizing: border-box;width: 20%;height: 36px;background: #00C687;border: none;color: #FFFFFF;float: right;border-radius: 5px;cursor: pointer;}
+.content .result_content{border-top: 1px solid #F2F2F2;padding: 10px 0;}
+.content .result_content .re_left{font-size: 12px;float:left; width: 78%;}
+.content .re_left .re_list{line-height: 25px;}
+.content .re_left .re_list .tit{color: #9CA4A4;width: 35%;float: left;text-align: right;}
+.content .re_left .re_list .answer{color: #000;width: 65%;float: left;text-align: left;}
+
+.content .result_content .re_right{float:right; width: 16%;}
+.content .result_content .re_right .re_true{cursor: pointer;display: block;width: 100%;background: #06BE94;border-radius: 5px;border: none;height: 28px;color: #FFFFFF;font-size: 13px;margin: 25px 0 15px;}
+.content .result_content .re_right .re_false{cursor: pointer;display: block;width: 100%;background: #E2E8EA;border-radius: 5px;border: none;height: 28px;color: #000;font-size: 13px;margin: 15px 0 25px 0;}
+
+
 .prove{
 	width: 100%;
 	height: auto;
@@ -67,12 +85,10 @@
 	text-align: right;
 }
 .search{
-	width: 100%;
-	height: auto;
-	float: left;
-	text-align: left;
-	padding: 20px 0;
+	width: 100%; 
+	text-align: left; 
 }
+.search a, .search .input-box{margin: 20px 0;}
 .search a{
 	background: #06be94;
 	color: #ffffff;
@@ -100,66 +116,9 @@
 	float: left;
 	margin-left: 20px;
 }
-.order-list{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.no-order{
-	width: 1018px;
-	_width:1020px;
-	float: left;
-	height: auto;
-	padding: 50px 0;
-	font-size: 18px;
-	border: 1px solid #e5e5e5;
-}
-.order-list .thead{
-	width: 100%;
-	height: auto;
-	float: left;
-	background: #06be94;
-	color: #ffffff;
-	line-height: 40px;
-}
-.order-list .tbody,.order-list .tbody .tr{
-	width: 100%;
-	height: auto;
-	float: left;
-}
-.order-list .tbody .tr{
-	border: 1px solid #e5e5e5;
-	line-height: 50px;
-	border-top: none;
-	width: 1018px;
-	_width:1020px;
-}
-.order-list .tbody .tr:hover{
-	background: #f8f8f8;
-}
-.order-list .time{
-	width: 160px;
-	float: left;
-}
-.order-list .name{
-	width: 160px;
-	float: left;
-}
-.order-list .sex{
-	width: 158px;
-	float: left;
-}
-.order-list .tel{
-	width: 160px;
-	float: left;
-}
-.order-list .package-name{
-	width: 380px;
-	float: left;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.order-list .package-name a:hover{
-	text-decoration: underline;
-}
+ 
+/* order-list */
+.content-list{padding: 0 2%;} 
+ 
+
+

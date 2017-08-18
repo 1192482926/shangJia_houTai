@@ -8,7 +8,7 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, em {
 	padding: 0;
 	margin: 0;
-	outline: none
+	outline: none;
 }
 table {
 	border-collapse: collapse;
@@ -43,8 +43,7 @@ input[type=text],input[type=email],input[type=search],input[type=button],textare
 body {
 	font: 14px/20px "Microsoft Yahei","宋体", Tahoma, 'Simsun';
 	color: #333333;
-	background: #ffffff;
-	text-align: center;
+	background: #ffffff; 
 }
 a, a:visited {
 	text-decoration: none;
@@ -64,155 +63,24 @@ input {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
     display: block;
 }
-.wrap{
-	margin:0 auto;
-	width:1200px;
-}
-.header{
-	width: 100%;
-	height: 80px;
-	line-height: 80px;
-}
-.header .tel{
-	float: right;
-}
-.header .logo{
-	float: left;
-	font-size: 28px;
-}
-.header .logo i.icon-logo{
-	width: 23px;
-	height: 32px;
-	overflow: hidden;
-	float: left;
-	background: url(../images/icon.png) no-repeat 0 0;
-	margin-top: 24px;
-}
-.main{
-	width: 100%;
-	min-width: 1200px;
-	height: 500px;
-	position: relative;
-	background: url(../images/bg.jpg) no-repeat center top #02ced7;
-}
-.main .userbox{
-	position: relative;
-	width: 330px;
-	float: right;
-	box-shadow: 0 0 5px #cccccc;
-	margin: 75px 145px 0 0;
-}
-.main .userbox .userbox-bg{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: #ffffff;
-	opacity: 0.7;
-	filter:alpha(opacity=70);
-}
-.main .userbox .boxmain{
-	position: relative;
-	padding: 25px;
-	float: left;
-}
-.main .userbox .boxmain .box-name,.main .userbox .boxmain .item{
-	width: 280px;
-	float: left;
-}
-.main .userbox .boxmain .box-name{
-	font-size: 18px;
-	padding-bottom: 20px;
-}
-.main .userbox .boxmain .input-box{
-	width: 100%;
-	position: relative;
-	text-align: left;
-	float: left;
-}
-.main .userbox .boxmain .input{
-	border: none;
-	padding: 10px;
-	width: 260px;
-	border-radius: 5px;
-	box-shadow: #cccccc;
-	height: 20px;
-	float: left;
-}
-.main .userbox .boxmain .short{
-	width: 120px;
-}
-.main .userbox .boxmain .short .input{
-	width: 100px;
-}
-.main .userbox .boxmain input:focus.input{
-	box-shadow: 0 0 5px #a7e5d7;
-}
-.main .userbox .boxmain .input-tips{
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	cursor: text;
-	color: #999999;
-}
-.main .userbox .boxmain .error-tips{
-	width: 260px;
-	height: 20px;
-	float: left;
-	line-height: 20px;
-	text-align: right;
-	padding-left: 10px;
-	color: #666666;
-	font-size: 12px;
-}
-.main .userbox .boxmain .getcode{
-	float: left;
-	margin-left: 10px;
-}
-.main .userbox .boxmain .getcode a{
-	float: left;
-	width: 150px;
-	height: 40px;
-	line-height: 40px;
-	background: #06be94;
-	border-radius: 5px;
-}
-.main .userbox .boxmain .getcode a:hover{
-	background: #25d3a4;
-}
-.main .userbox .boxmain .waiting a,.main .userbox .boxmain .waiting a:hover{
-	background: #dedede;
-	cursor: default;
-}
-.main .userbox .boxmain .useragreement a{
-	text-decoration: underline;
-}
-.main .userbox .boxmain .useragreement a:hover{
-	text-decoration: none;
-}
-.main .userbox .boxmain .useragreement input,.main .userbox .boxmain .forget input{
-	vertical-align: bottom;
-	float: left;
-	margin: 4px 5px 0 0;
-}
-.main .userbox .boxmain .forget a{
-	float: right;
-}
-.main .userbox .boxmain .forget a:hover{
-	text-decoration: underline;
-}
-.main .userbox .boxmain .enter-btn{
-	width: 100%;
-	background: #06be94;
-	height: 40px;
-	line-height: 40px;
-	float: left;
-	cursor: pointer;
-	border-radius: 5px;
-	color: #ffffff;
-	font-size: 16px;
-}
-.main .userbox .boxmain input:hover.enter-btn{
-	background: #25d3a4;
-}
+
+/* bg */  
+.bg{height: 1200px;width: 100%;background: url(../images/login/login-bg.png)no-repeat;background-size: auto 100%;background-position: center;}
+/* logo-box */
+.logo-box{position:relative;margin: 0 auto;text-align: center;font-size: 17px;line-height: 28px;}
+.logo-box-ct{position: absolute;left: 0;bottom: 30px; float:left;width: 100%;}
+
+/* userbox */
+.userbox{box-sizing: border-box;position:relative;z-index:1;width: 350px;padding: 15px 30px 30px 40px;background: #FFFFFF;margin: auto;font-size: 12px;box-shadow: 0 0 15px #CCCCCC;}
+.userbox .box-name{font-size: 17px;margin: 10px 0 25px 0;text-align: center;}
+.userbox .item, .userbox .no-AccountNumber{position:relative;width: 100%;}
+.userbox .item input{box-sizing:border-box;border: 1px solid #DBDBDB;padding: 10px 15px;width: 100%;}
+.userbox .item .error-tips{color: red;height: 22px;}
+.userbox .item .enter-btn{background: #00C687;color: #FFFFFF;margin: 15px 0;}
+.userbox .item .Code{width: 55%;}
+.userbox .no-AccountNumber{text-align: center;color: #000000;}
+.userbox .no-AccountNumber a{color: #3A99D8;}
+
+.wrap{width: 100%;}
+
+
