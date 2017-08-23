@@ -23,11 +23,11 @@
 			<div class="logo-box">
 				<div class="logo-box-ct">
 					<img src="images/common/logo.png" />
-					<p class="title">体检管理系统</p>
+					<!--<p class="title">体检管理系统</p>-->
 				</div> 
 			</div>
 			<div class="userbox">
-				<div class="box-name">登录</div>
+				<div class="box-name">体检管理系统</div>
 				<div class="item">
 					<input type="text" class="input" id="user" placeholder="账号/手机号" />
 					<div class="error-tips"></div>
@@ -36,17 +36,28 @@
 					<input type="password" class="input" id="password" placeholder="密码" />
 					<div class="error-tips"></div>
 				</div>
-				<div class="item">
+				<!--<div class="item">
 					<input type="password" class="input Code" id="Code" placeholder="验证码" />
 					<div class="error-tips"></div>
+				</div>-->
+				
+				<div class="item forget clearfix">
+					<div class="input-box clearfix">
+						<a class="forgetPassword" href="find-password.html">忘记密码？</a>
+						<span class="autoLogin clearfix"> 
+							<input type="checkbox" value="" id="auto" />
+							<label for="auto" title="请勿在公共电脑使用此功能！">自动登录</label>
+						</span>
+					</div> 
 				</div>
 
 				<div class="item">
 					<input type="submit" value="登录" class="enter-btn" />
 				</div>
-				<div class="no-AccountNumber">还没有账号，
+				
+				<!--<div class="no-AccountNumber">还没有账号，
 					<a href="javascript:void(0);">立即注册</a>
-				</div>
+				</div>-->
 			</div>
 		</div> 
 		</div>
@@ -54,6 +65,13 @@
 	<script type="text/javascript" src="script/jquery.js"></script>
 	<script type="text/javascript" src="script/login.js?v=1.0.328"></script>
 	<script>
-		$('.wrap').css('height',$(window).height());
+		autoHeight();
+		function autoHeight(){
+			$('.bg').css('height',$(window).height());
+			$('.wrap').css('height',$(window).height()); 
+		}  
+		$(window).resize(function(){
+			autoHeight(); 
+		})
 	</script>
 </html>

@@ -272,6 +272,7 @@ input:focus.input{
 	height: auto;
 	overflow: hidden;
 	margin: 5px;
+	text-align: center;
 }
 .photo .img-box img{
 	float: left;
@@ -293,14 +294,13 @@ input:focus.input{
 	height: 100%;
 	overflow: hidden;
 }
-.photo .img-box .del a{
-	float: left;  
+.photo .img-box .del a{ 
 	text-align: center; 
 	position: relative;
+	z-index: 11;
 	overflow: hidden;
 	/*background: url(../images/icon.png) no-repeat 3px -182px #06be94;*/
-	margin-top: -50px;
-	margin-left: 35px;
+	top: -48px;  
 	border: 1px solid #FFFFFF;
 	color: #FFFFFF;
 	padding: 2px 12px;
